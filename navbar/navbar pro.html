@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 مدل نوار ناوبری | CheatCode</title>
+    <!-- Font Awesome 6 (رایگان) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ----- تنظیمات پایه ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f2f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px 60px;
+        }
+
+        .cheat-container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        .page-title span {
+            background: linear-gradient(145deg, #3b82f6, #8b5cf6);
+            padding: 0 18px;
+            border-radius: 40px;
+            color: #fff;
+            display: inline-block;
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+        .sub-cheat {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            border-bottom: 2px dashed #cbd5e1;
+            padding-bottom: 18px;
+        }
+        .sub-cheat i {
+            color: #8b5cf6;
+            margin: 0 6px;
+        }
+
+        /* ----- بخش هر نوار ----- */
+        .navbar-section {
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            padding: 20px 18px 30px;
+            margin-bottom: 50px;
+            transition: all 0.2s;
+            border: 1px solid #e9edf2;
+        }
+
+        .navbar-section:hover {
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.08);
+        }
+
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 18px;
+            padding-right: 8px;
+        }
+        .section-label i {
+            color: #3b82f6;
+            font-size: 1.7rem;
+        }
+        .section-label small {
+            font-weight: 400;
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-right: 12px;
+            background: #eef2f6;
+            padding: 2px 14px;
+            border-radius: 30px;
+        }
+
+        /* ============================== */
+        /*  مدل شماره 1 : کلاسیک با افکت   */
+        /* ============================== */
+        .navbar-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            padding: 10px 24px;
+            border-radius: 60px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e2e8f0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .nav1-brand {
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+        .nav1-brand i {
+            -webkit-text-fill-color: initial;
+            color: #2563eb;
+            margin-left: 6px;
+        }
+
+        .nav1-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .nav1-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 40px;
+            transition: all 0.25s;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav1-links a i {
+            font-size: 1rem;
+            color: #64748b;
+            transition: 0.2s;
+        }
+        .nav1-links a:hover {
+            background: #f1f5f9;
+            color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+        }
+        .nav1-links a:hover i {
+            color: #2563eb;
+        }
+        .nav1-links .active {
+            background: #2563eb;
+            color: #fff;
+            box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
+        }
+        .nav1-links .active i {
+            color: #fff;
+        }
+
+        .nav1-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav1-actions button {
+            background: transparent;
+            border: none;
+            font-size: 1.2rem;
+            color: #475569;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 40px;
+            transition: 0.2s;
+        }
+        .nav1-actions button:hover {
+            background: #f1f5f9;
+            color: #2563eb;
+        }
+        .nav1-actions .btn-primary {
+            background: #2563eb;
+            color: #fff;
+            padding: 8px 20px;
+            font-weight: 600;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+        .nav1-actions .btn-primary:hover {
+            background: #1d4ed8;
+            transform: scale(1.02);
+            box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+        }
+
+        /* ============================== */
+        /*  مدل شماره 2 : مینیمال با خط زیر */
+        /* ============================== */
+        .navbar-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8fafc;
+            padding: 8px 22px;
+            border-radius: 18px;
+            border-bottom: 4px solid #dbeafe;
+            flex-wrap: wrap;
+            gap: 14px;
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .nav2-brand {
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .nav2-brand i {
+            color: #3b82f6;
+        }
+        .nav2-brand span {
+            background: #3b82f6;
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 2px 12px;
+            border-radius: 40px;
+            margin-right: 8px;
+        }
+
+        .nav2-links {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .nav2-links a {
+            text-decoration: none;
+            color: #334155;
+            font-weight: 500;
+            padding: 10px 18px;
+            border-radius: 12px;
+            transition: all 0.2s;
+            font-size: 0.95rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav2-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0%;
+            height: 3px;
+            background: #3b82f6;
+            border-radius: 10px;
+            transition: 0.25s ease;
+        }
+        .nav2-links a:hover::after {
+            width: 60%;
+        }
+        .nav2-links a:hover {
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+        .nav2-links .active {
+            color: #2563eb;
+            background: #eff6ff;
+        }
+        .nav2-links .active::after {
+            width: 60%;
+        }
+
+        .nav2-actions {
+            display: flex;
+            gap: 6px;
+        }
+        .nav2-actions button {
+            background: #eef2f6;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-weight: 500;
+            color: #1e293b;
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav2-actions button i {
+            color: #64748b;
+        }
+        .nav2-actions button:hover {
+            background: #dbeafe;
+            color: #2563eb;
+        }
+        .nav2-actions .btn-outline {
+            background: transparent;
+            border: 2px solid #cbd5e1;
+        }
+        .nav2-actions .btn-outline:hover {
+            border-color: #3b82f6;
+            background: #eff6ff;
+        }
+
+        /* ============================== */
+        /*  مدل شماره 3 : مدرن با دکمه همبرگر (موبایل) + آیکون‌ها */
+        /* ============================== */
+        .navbar-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0f172a;
+            padding: 10px 28px;
+            border-radius: 40px;
+            color: #f1f5f9;
+            flex-wrap: wrap;
+            gap: 12px;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.25);
+        }
+
+        .nav3-brand {
+            font-size: 1.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+        }
+        .nav3-brand i {
+            color: #8b5cf6;
+            filter: drop-shadow(0 0 6px rgba(139, 92, 246, 0.4));
+        }
+        .nav3-brand small {
+            font-size: 0.65rem;
+            background: #8b5cf6;
+            padding: 2px 14px;
+            border-radius: 50px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .nav3-links {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .nav3-links a {
+            text-decoration: none;
+            color: #cbd5e1;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+        .nav3-links a i {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            transition: 0.2s;
+        }
+        .nav3-links a:hover {
+            background: #1e293b;
+            color: #fff;
+        }
+        .nav3-links a:hover i {
+            color: #a78bfa;
+        }
+        .nav3-links .active {
+            background: #8b5cf6;
+            color: #fff;
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.3);
+        }
+        .nav3-links .active i {
+            color: #fff;
+        }
+
+        .nav3-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .nav3-actions button {
+            background: #1e293b;
+            border: none;
+            color: #e2e8f0;
+            width: 42px;
+            height: 42px;
+            border-radius: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav3-actions button:hover {
+            background: #334155;
+            color: #a78bfa;
+        }
+        .nav3-actions .menu-icon {
+            background: #8b5cf6;
+            color: #fff;
+        }
+        .nav3-actions .menu-icon:hover {
+            background: #7c3aed;
+            color: #fff;
+        }
+
+        /* ---- responsive کوچک ---- */
+        @media (max-width: 700px) {
+            .navbar-1, .navbar-2, .navbar-3 {
+                flex-direction: column;
+                align-items: stretch;
+                border-radius: 28px;
+                padding: 18px 16px;
+            }
+            .nav1-links, .nav2-links, .nav3-links {
+                justify-content: center;
+            }
+            .nav1-actions, .nav2-actions, .nav3-actions {
+                justify-content: center;
+                margin-top: 6px;
+            }
+            .nav3-actions {
+                flex-direction: row-reverse;
+            }
+            .section-label {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* ----- کپی رایت کوچک ----- */
+        .cheat-footer {
+            margin-top: 30px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 25px;
+            text-align: center;
+        }
+        .cheat-footer i {
+            color: #8b5cf6;
+        }
+    </style>
+</head>
+<body>
+<div class="cheat-container">
+
+    <h1 class="page-title">
+        <span>🧩 3 Navbar</span> CheatCode
+    </h1>
+    <div class="sub-cheat">
+        <i class="fas fa-code"></i> ۳ مدل نوار ناوبری مختلف در یک صفحه — آماده برای پروژه‌های شما <i class="fas fa-arrow-left"></i>
+    </div>
+
+    <!-- ============ مدل شماره 1 ============ -->
+    <div class="navbar-section">
+        <div class="section-label">
+            <i class="fas fa-wand-magic-sparkles"></i> مدل ۱
+            <small>کلاسیک با افکت</small>
+        </div>
+        <nav class="navbar-1">
+            <div class="nav1-brand">
+                <i class="fas fa-cube"></i> Cheat<span style="-webkit-text-fill-color: #7c3aed;">UI</span>
+            </div>
+            <div class="nav1-links">
+                <a href="#" class="active"><i class="fas fa-house"></i> خانه</a>
+                <a href="#"><i class="fas fa-compass"></i> کاوش</a>
+                <a href="#"><i class="fas fa-folder"></i> پروژه‌ها</a>
+                <a href="#"><i class="fas fa-user"></i> پروفایل</a>
+            </div>
+            <div class="nav1-actions">
+                <button><i class="fas fa-search"></i></button>
+                <button class="btn-primary"><i class="fas fa-arrow-right-to-bracket"></i> ورود</button>
+            </div>
+        </nav>
+        <!-- توضیح کوتاه (cheatcode) -->
+        <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; background: #f1f5f9; padding: 6px 18px; border-radius: 60px; display: inline-block;">
+            <i class="fas fa-tag"></i> کلاس : <code>.navbar-1</code>  |  hover با سایه و حرکت
+        </div>
+    </div>
+
+    <!-- ============ مدل شماره 2 ============ -->
+    <div class="navbar-section">
+        <div class="section-label">
+            <i class="fas fa-underline"></i> مدل ۲
+            <small>مینیمال با خط زیر</small>
+        </div>
+        <nav class="navbar-2">
+            <div class="nav2-brand">
+                <i class="fas fa-bolt"></i> MinUI <span>v2</span>
+            </div>
+            <div class="nav2-links">
+                <a href="#" class="active"><i class="fas fa-home"></i> خانه</a>
+                <a href="#"><i class="fas fa-chart-simple"></i> آمار</a>
+                <a href="#"><i class="fas fa-gear"></i> تنظیمات</a>
+                <a href="#"><i class="fas fa-envelope"></i> پیام‌ها</a>
+            </div>
+            <div class="nav2-actions">
+                <button><i class="fas fa-moon"></i></button>
+                <button class="btn-outline"><i class="fas fa-user-plus"></i> ثبت‌نام</button>
+            </div>
+        </nav>
+        <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; background: #f1f5f9; padding: 6px 18px; border-radius: 60px; display: inline-block;">
+            <i class="fas fa-tag"></i> کلاس : <code>.navbar-2</code>  |  خط زیر در hover
+        </div>
+    </div>
+
+    <!-- ============ مدل شماره 3 ============ -->
+    <div class="navbar-section">
+        <div class="section-label">
+            <i class="fas fa-mobile-screen-button"></i> مدل ۳
+            <small>مدرن با آیکون & همبرگر</small>
+        </div>
+        <nav class="navbar-3">
+            <div class="nav3-brand">
+                <i class="fas fa-rocket"></i> DevKit <small>beta</small>
+            </div>
+            <div class="nav3-links">
+                <a href="#" class="active"><i class="fas fa-gauge-high"></i> داشبورد</a>
+                <a href="#"><i class="fas fa-code"></i> کدها</a>
+                <a href="#"><i class="fas fa-people-group"></i> تیم</a>
+                <a href="#"><i class="fas fa-calendar"></i> تقویم</a>
+            </div>
+            <div class="nav3-actions">
+                <button><i class="fas fa-bell"></i></button>
+                <button class="menu-icon"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+        <div style="margin-top: 14px; font-size: 0.85rem; color: #64748b; background: #f1f5f9; padding: 6px 18px; border-radius: 60px; display: inline-block;">
+            <i class="fas fa-tag"></i> کلاس : <code>.navbar-3</code>  |  دارک مود، دکمه همبرگر
+        </div>
+    </div>
+
+    <div class="cheat-footer">
+        <i class="fas fa-crown"></i> ۳ مدل نوار ناوبری برای CheatCode — هر کدام با استایل و ساختار مجزا
+        <br><span style="font-size: 0.8rem;">✨ برای استفاده کافی است کد HTML + CSS را کپی کنید ✨</span>
+    </div>
+
+</div>
+</body>
+</html>
